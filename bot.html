@@ -1,126 +1,89 @@
-<!-- مثال صفحة ai-bot.html -->
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" class="theme-blue">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المساعد الذكي - KALL LINUX</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --primary: #3B82F6; /* لون أساسي يتغير لكل صفحة */
-            --secondary: #1E293B;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>روبوت المحادثة - HPPSH</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+    }
 
-        .theme-blue {
-            --primary: #3B82F6;
-            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-        }
+    :root {
+      --primary: #3B82F6;
+      --secondary: #1E293B;
+    }
 
-        .loading-spinner {
-            border-top-color: var(--primary);
-            animation: spin 1s linear infinite;
-        }
+    .theme-blue {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+      color: white;
+    }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+    .loading-spinner {
+      border: 4px solid #ffffff33;
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
-<body class="theme-blue min-h-screen font-[Tajawal]">
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
-        
-        <!-- الهيدر -->
-        <header class="text-center mb-12 animate__animated animate__fadeInDown">
-            <div class="flex justify-center items-center gap-4">
-                <img src="logo.png" alt="KALL Linux" class="h-12">
-                <h1 class="text-4xl font-bold" style="color: var(--primary)">
-                    المساعد الذكي
-                </h1>
-            </div>
-            <p class="text-slate-400 mt-2">الإصدار 2.0 فلاش</p>
-        </header>
+<body class="min-h-screen flex flex-col items-center justify-center px-4 text-center">
 
-        <!-- منطقة الدردشة -->
-        <div id="chat-container" class="bg-slate-800 rounded-xl p-6 mb-6 h-96 overflow-y-auto">
-            <!-- الرسائل تظهر هنا -->
-        </div>
+  <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">روبوت المحادثة</h1>
+  <p class="text-gray-300 text-lg max-w-2xl animate__animated animate__fadeInUp">
+    تفاعل مع روبوت الذكاء الاصطناعي في محادثة طبيعية وسلسة، مدعومة بأحدث تقنيات المعالجة اللغوية.
+  </p>
 
-        <!-- منطقة الإدخال -->
-        <div class="flex gap-4 mb-8 relative">
-            <input 
-                type="text" 
-                id="user-input"
-                placeholder="اكتب رسالتك هنا..."
-                class="w-full bg-slate-700 text-slate-200 rounded-full py-4 px-6 
-                       focus:outline-none focus:ring-2 focus:ring-blue-500
-                       transition-all duration-300"
-            >
-            <button 
-                id="send-btn"
-                class="bg-blue-600 hover:bg-blue-700 w-16 h-16 rounded-full 
-                       text-white text-2xl absolute left-2 bottom-1
-                       animate__animated animate__pulse animate__infinite"
-                onclick="sendMessage()"
-            >
-                →
-            </button>
-            
-            <!-- مؤشر التحميل -->
-            <div id="loading" class="hidden absolute -top-10 right-4">
-                <div class="loading-spinner h-8 w-8 border-4 rounded-full"></div>
-            </div>
-        </div>
-
-        <!-- التحكم في الوضع -->
-        <div class="flex justify-center gap-6 text-slate-400">
-            <button 
-                id="theme-toggle"
-                class="hover:text-blue-400 transition-colors"
-                onclick="toggleTheme()"
-            >
-                🌓 تبديل الوضع
-            </button>
-        </div>
-
+  <!-- واجهة محادثة -->
+  <div class="bg-white/10 w-full max-w-2xl mt-8 rounded-lg p-4 space-y-4">
+    <div class="h-64 overflow-y-auto bg-black/40 p-3 rounded text-right text-sm text-white" id="chatBox">
+      <!-- الرسائل ستُعرض هنا -->
+      <p class="text-gray-400">[بوت]: مرحباً بك! كيف يمكنني مساعدتك اليوم؟</p>
     </div>
+    <div class="flex space-x-2 rtl:space-x-reverse">
+      <input id="userInput" type="text" placeholder="اكتب رسالتك..." class="flex-1 p-2 rounded bg-black/50 border border-white/20 text-white" />
+      <button onclick="sendMessage()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">إرسال</button>
+    </div>
+  </div>
 
-    <script>
-        // تفعيل الوضع الليلي/النهاري
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-        }
+  <!-- مؤشر تحميل -->
+  <div class="mt-6 hidden" id="loading">
+    <div class="loading-spinner mx-auto"></div>
+    <p class="text-sm text-gray-400 mt-2">يتم المعالجة...</p>
+  </div>
 
-        // محاكاة استجابة API
-        async function sendMessage() {
-            const input = document.getElementById('user-input');
-            const loading = document.getElementById('loading');
-            
-            loading.classList.remove('hidden');
-            input.disabled = true;
+  <script>
+    function sendMessage() {
+      const input = document.getElementById('userInput');
+      const message = input.value.trim();
+      if (message === '') return;
 
-            // محاكاة اتصال API
-            setTimeout(() => {
-                const chatContainer = document.getElementById('chat-container');
-                chatContainer.innerHTML += `
-                    <div class="animate__animated animate__fadeInRight mb-4">
-                        <div class="bg-slate-700 p-4 rounded-xl">
-                            <p>${input.value}</p>
-                            <p class="text-blue-400 mt-2">الجواب المقترح...</p>
-                        </div>
-                    </div>
-                `;
-                
-                loading.classList.add('hidden');
-                input.disabled = false;
-                input.value = '';
-                chatContainer.scrollTop = chatContainer.scrollHeight;
-            }, 1500);
-        }
-    </script>
+      const chatBox = document.getElementById('chatBox');
+      chatBox.innerHTML += `<p class="text-right text-green-300">[أنت]: ${message}</p>`;
+      input.value = '';
+
+      // إظهار المؤشر
+      const loading = document.getElementById('loading');
+      loading.classList.remove('hidden');
+
+      // رد افتراضي بعد ثانية
+      setTimeout(() => {
+        chatBox.innerHTML += `<p class="text-gray-400">[بوت]: هذا رد آلي تجريبي. سيتم دمج الذكاء قريباً!</p>`;
+        loading.classList.add('hidden');
+        chatBox.scrollTop = chatBox.scrollHeight;
+      }, 1000);
+    }
+  </script>
+
 </body>
 </html>
