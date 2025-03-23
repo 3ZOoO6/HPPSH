@@ -25,141 +25,15 @@
         <a href="help.html" class="block text-blue-400 hover:underline">Help Center</a>
       </nav>
     
-<div class="mt-10 text-sm text-gray-400 text-center">
-  <p>تابعنا:</p>
-  <a href="https://www.snapchat.com/add/bx90_9?share_id=advDbNuiL0c&locale=ar-EG" class="underline block">Snapchat</a>
-  <a href="https://www.snapchat.com/add/bx90_9?share_id=advDbNuiL0c&locale=ar-EG" class="underline block">Instagram</a>
-  <p class="mt-4">التطبيق يعمل على:</p>
-  <p>http://localhost:3000</p>
-  <p>http://192.168.100.46:3000</p>
-</div>
+      <div class="mt-10 text-sm text-gray-400 text-center">
+        <p>تابعنا:</p>
+        <a href="https://www.snapchat.com/add/bx90_9?share_id=advDbNuiL0c&locale=ar-EG" class="underline block">Snapchat</a>
+        <a href="https://www.snapchat.com/add/bx90_9?share_id=advDbNuiL0c&locale=ar-EG" class="underline block">Instagram</a>
+        <p class="mt-4">التطبيق يعمل على:</p>
+        <p>http://localhost:3000</p>
+        <p>http://192.168.100.46:3000</p>
+      </div>
 
-</main>
+    </main>
   </body>
-</html>
-<!-- مثال صفحة ai-bot.html -->
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>المساعد الذكي - KALL LINUX</title>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        :root {
-            --primary: #3B82F6; /* لون أساسي يتغير لكل صفحة */
-            --secondary: #1E293B;
-        }
-
-        .theme-blue {
-            --primary: #3B82F6;
-            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-        }
-
-        .loading-spinner {
-            border-top-color: var(--primary);
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
-</head>
-<body class="theme-blue min-h-screen font-[Tajawal]">
-    <div class="container mx-auto px-4 py-8 max-w-4xl">
-        
-        <!-- الهيدر -->
-        <header class="text-center mb-12 animate__animated animate__fadeInDown">
-            <div class="flex justify-center items-center gap-4">
-                <img src="logo.png" alt="KALL Linux" class="h-12">
-                <h1 class="text-4xl font-bold" style="color: var(--primary)">
-                    المساعد الذكي
-                </h1>
-            </div>
-            <p class="text-slate-400 mt-2">الإصدار 2.0 فلاش</p>
-        </header>
-
-        <!-- منطقة الدردشة -->
-        <div id="chat-container" class="bg-slate-800 rounded-xl p-6 mb-6 h-96 overflow-y-auto">
-            <!-- الرسائل تظهر هنا -->
-        </div>
-
-        <!-- منطقة الإدخال -->
-        <div class="flex gap-4 mb-8 relative">
-            <input 
-                type="text" 
-                id="user-input"
-                placeholder="اكتب رسالتك هنا..."
-                class="w-full bg-slate-700 text-slate-200 rounded-full py-4 px-6 
-                       focus:outline-none focus:ring-2 focus:ring-blue-500
-                       transition-all duration-300"
-            >
-            <button 
-                id="send-btn"
-                class="bg-blue-600 hover:bg-blue-700 w-16 h-16 rounded-full 
-                       text-white text-2xl absolute left-2 bottom-1
-                       animate__animated animate__pulse animate__infinite"
-                onclick="sendMessage()"
-            >
-                →
-            </button>
-            
-            <!-- مؤشر التحميل -->
-            <div id="loading" class="hidden absolute -top-10 right-4">
-                <div class="loading-spinner h-8 w-8 border-4 rounded-full"></div>
-            </div>
-        </div>
-
-        <!-- التحكم في الوضع -->
-        <div class="flex justify-center gap-6 text-slate-400">
-            <button 
-                id="theme-toggle"
-                class="hover:text-blue-400 transition-colors"
-                onclick="toggleTheme()"
-            >
-                🌓 تبديل الوضع
-            </button>
-        </div>
-
-    </div>
-
-    <script>
-        // تفعيل الوضع الليلي/النهاري
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
-        }
-
-        // محاكاة استجابة API
-        async function sendMessage() {
-            const input = document.getElementById('user-input');
-            const loading = document.getElementById('loading');
-            
-            loading.classList.remove('hidden');
-            input.disabled = true;
-
-            // محاكاة اتصال API
-            setTimeout(() => {
-                const chatContainer = document.getElementById('chat-container');
-                chatContainer.innerHTML += `
-                    <div class="animate__animated animate__fadeInRight mb-4">
-                        <div class="bg-slate-700 p-4 rounded-xl">
-                            <p>${input.value}</p>
-                            <p class="text-blue-400 mt-2">الجواب المقترح...</p>
-                        </div>
-                    </div>
-                `;
-                
-                loading.classList.add('hidden');
-                input.disabled = false;
-                input.value = '';
-                chatContainer.scrollTop = chatContainer.scrollHeight;
-            }, 1500);
-        }
-    </script>
-</body>
 </html>
