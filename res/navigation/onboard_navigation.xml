@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/onboard_navigation.xml" app:startDestination="@id/firstOnboardNormalFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="FirstOnboardNormalFragment" android:name="com.android.ntduc.chatgpt.ui.component.onboard.normal.fragment.FirstOnboardNormalFragment" android:id="@id/firstOnboardNormalFragment" />
+    <fragment android:label="SecondOnboardNormalFragment" android:name="com.android.ntduc.chatgpt.ui.component.onboard.normal.fragment.SecondOnboardNormalFragment" android:id="@id/secondOnboardNormalFragment" />
+</navigation>

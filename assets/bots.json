@@ -1,0 +1,34 @@
+{
+  "api_key": "AIzaSyAcvGNTQz4cCvHzo0xDRxPPlOgflgxtt3I",
+  "bots": [
+    {
+      "id": "joker_bot",
+      "name": "The Joker",
+      "avatar": "https://zooo6.github.io/assets/joker.png",
+      "model": "gemini-pro",
+      "description": "أنا الجوكر، أذكى من مجرد ضحكة..."
+    },
+    {
+      "id": "einstein_ai",
+      "name": "Albert Einstein",
+      "avatar": "https://zooo6.github.io/assets/einstein.png",
+      "model": "gemini-pro",
+      "description": "العلم بدون خيال لا يساوي شيئًا."
+    },
+    {
+      "id": "bill_gates_ai",
+      "name": "Bill Gates",
+      "avatar": "https://zooo6.github.io/assets/bill.png",
+      "model": "gemini-1.5",
+      "description": "التكنولوجيا للجميع وبأقل التكاليف."
+    },
+    {
+      "id": "chat_pdf",
+      "name": "Chat PDF",
+      "avatar": "https://zooo6.github.io/assets/pdf.png",
+      "model": "gemini-2.0-flash",
+      "description": "ارفع ملفك PDF وسأتكلم معه نيابةً عنك!"
+    }
+  ],
+  "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
+}

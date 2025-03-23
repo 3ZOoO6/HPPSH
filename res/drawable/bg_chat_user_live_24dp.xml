@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:topLeftRadius="24.0dip" android:bottomLeftRadius="24.0dip" android:bottomRightRadius="24.0dip" />
+            <solid android:color="@color/bg_chat_user_live_support" />
+        </shape>
+    </item>
+</layer-list>

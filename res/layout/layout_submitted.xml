@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_survey_submitted" android:layout_width="fill_parent" android:layout_height="fill_parent" android:translationZ="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="400.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/img_submitted" app:layout_constraintBottom_toTopOf="@id/linearLayout" app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.2" app:layout_constraintVertical_chainStyle="packed" />
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/imageView">
+        <TextView android:textSize="35.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="Thank you!" android:fontFamily="@font/roboto_bold" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="for submitting a survey to us" android:fontFamily="@font/roboto_bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

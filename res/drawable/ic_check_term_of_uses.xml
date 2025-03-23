@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_check_term_of_uses_true" android:state_activated="true" />
+    <item android:drawable="@drawable/ic_check_term_of_uses_false" android:state_activated="false" />
+</selector>

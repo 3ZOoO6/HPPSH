@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@mipmap/ic_launcher" android:enabled="true" android:shortcutId="chatbot_4o">
+        <intent android:targetPackage="com.android.ntduc.chatgpt" android:action="android.intent.action.PROCESS_TEXT" android:targetClass="com.android.ntduc.chatgpt.ui.component.bubble_chat.BubbleChatActivity" />
+    </shortcut>
+</shortcuts>

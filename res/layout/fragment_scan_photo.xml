@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/fragment_scan_photo_0" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/clControl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip" app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgAbort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_abort_photo_scan" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/imgAccept" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgAccept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_accept_photo_scan" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toEndOf="@id/imgAbort" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/imgScan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" app:layout_constraintBottom_toTopOf="@id/clControl" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.android.ntduc.chatgpt.ui.customview.TextGraphic android:id="@id/textGraphic" android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="@id/imgScan" app:layout_constraintEnd_toEndOf="@id/imgScan" app:layout_constraintStart_toStartOf="@id/imgScan" app:layout_constraintTop_toTopOf="@id/imgScan" />
+    <FrameLayout android:id="@id/frLoading" android:background="#88000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.appcompat.widget.LinearLayoutCompat android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/lottieChat" android:layout_width="@dimen/_150sdp" android:layout_height="@dimen/_150sdp" app:lottie_rawRes="@raw/anim_splash_v4425" app:lottie_repeatCount="-1" app:lottie_repeatMode="restart" />
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/txtLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/recognizing" android:fontFamily="@font/sf_pro_text_medium" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

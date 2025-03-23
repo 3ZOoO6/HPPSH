@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_question_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="What do you think about the app?" android:fontFamily="@font/roboto_medium" />
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/chk_option_1_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Question number 1" app:buttonTint="@color/button_tint_survey" />
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/chk_option_1_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Question number 2" app:buttonTint="@color/button_tint_survey" />
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/chk_option_1_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Question number 3" app:buttonTint="@color/button_tint_survey" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_question_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="What do you think about the app?" android:fontFamily="@font/roboto_medium" />
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/chk_option_2_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Question number 1" app:buttonTint="@color/button_tint_survey" />
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/chk_option_2_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Question number 2" app:buttonTint="@color/button_tint_survey" />
+    <CheckBox android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/chk_option_2_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Question number 3" app:buttonTint="@color/button_tint_survey" />
+</LinearLayout>

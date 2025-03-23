@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/bg_chat_user" android:background="@drawable/bg_chat_user_15dp" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ic_user" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_user_chat" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/title_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/you" android:fontFamily="@font/sf_pro_text_bold" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+        <View android:background="@color/line_chat_user" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/tvQuestion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/chatgpt_normal" android:fontFamily="@font/sf_pro_text_regular" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bg_chat_bot" android:background="@drawable/bg_chat_bot_15dp" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:background="@drawable/bg_circle_bot_oval" android:layout_width="24.0dip" android:layout_height="24.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/ivLogoChat" android:layout_width="16.0dip" android:layout_height="16.0dip" />
+            </FrameLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/title_bot" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/chat_pdf" android:layout_weight="1.0" android:fontFamily="@font/sf_pro_text_bold" android:layout_marginStart="10.0dip" />
+            <ImageView android:id="@id/like" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_like_20dp" android:layout_marginEnd="12.0dip" />
+            <ImageView android:id="@id/dislike" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dislike_20dp" android:layout_marginEnd="12.0dip" />
+            <ImageView android:id="@id/ivShare" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_share" android:layout_marginEnd="12.0dip" app:tint="@color/black" />
+            <ImageView android:id="@id/ivCopy" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_copy_20dp" app:tint="@color/black" />
+        </LinearLayout>
+        <View android:id="@id/viewAnswer" android:background="@color/line_chat_bot" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" />
+        <com.airbnb.lottie.LottieAnimationView android:id="@id/loadingChat" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="centerCrop" app:lottie_autoPlay="true" app:lottie_colorFilter="@color/loading_lottie" app:lottie_loop="true" app:lottie_rawRes="@raw/loading_chat" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/tvAnswer" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/chatgpt_normal" android:fontFamily="@font/sf_pro_text_regular" />
+        <RelativeLayout android:id="@id/rlReport" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/tvReport" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_report_chat" android:layout_toLeftOf="@id/tvUnhide" android:fontFamily="@font/sf_pro_text_regular" android:layout_marginEnd="16.0dip" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/text_unhidden" android:id="@id/tvUnhide" android:visibility="visible" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/unhide" android:fontFamily="@font/sf_pro_text_regular" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="end" android:id="@id/ivStop" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_stop_button" app:tint="@color/black" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/solid_bot_20" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/bru_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:fontFamily="@font/product_sans_bold" android:layout_marginHorizontal="20.0dip" />
+    <View android:background="@color/text_des" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="20.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginHorizontal="20.0dip">
+        <ImageView android:id="@id/bru_icon" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginRight="20.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="@color/black" android:id="@id/bru_app_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/product_sans_regular" />
+            <TextView android:textColor="@color/text_des" android:id="@id/bru_version_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/product_sans_regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/bru_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:fontFamily="@font/product_sans_regular" android:layout_marginHorizontal="20.0dip" />
+    <View android:background="@color/text_des" android:layout_width="fill_parent" android:layout_height="0.30000007dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="30.0dip" />
+    <Button android:textColor="@color/white" android:id="@id/bru_update" android:background="@drawable/solid_10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:text="Update" android:textAllCaps="false" android:fontFamily="@font/product_sans_regular" android:backgroundTint="@color/color_main" android:layout_marginHorizontal="20.0dip" />
+</LinearLayout>

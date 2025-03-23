@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/black_and_red_kali_linux_aj8krh25a5d6y6jq"
+            android:contentDescription="App Image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حول التطبيق"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تم تطوير هذا التطبيق بواسطة عبدالعزيز."
+            android:textColor="#CCCCCC"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snapchat: bx90_9"
+            android:textColor="#00FFFF"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram: bx90_9"
+            android:textColor="#FF00FF"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: abdulzizsaleme@gmail.com"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

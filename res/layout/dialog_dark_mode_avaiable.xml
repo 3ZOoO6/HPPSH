@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@id/main" android:tag="layout/dialog_dark_mode_avaiable_0" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_online_chat4_18dp" />
+        <TextView android:textSize="20.0dip" android:textColor="#ff0d0f11" android:gravity="center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/darkmode_now_is_available" android:includeFontPadding="false" android:fontFamily="@font/sf_pro_text_bold" />
+        <TextView android:textSize="14.0dip" android:textColor="#ff0d0f11" android:gravity="center" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/experience_our_new_dark_mode_feature_inspired_by_vip_user_s_feedback_for_more_eye_friendly_screen_time_try_it_out" android:includeFontPadding="false" android:fontFamily="@font/sf_pro_text_regular" />
+        <com.google.android.material.card.MaterialCardView android:id="@id/try_now" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="10.0dip" app:cardElevation="0.0dip" app:rippleColor="@color/white_60">
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:background="@drawable/bg_button_try_now_10dp" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/try_now" android:includeFontPadding="false" android:fontFamily="@font/sf_pro_text_semibold" android:paddingVertical="12.0dip" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

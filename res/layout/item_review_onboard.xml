@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="layout/item_review_onboard_0" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/first_item" android:layout_width="24.0dip" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_width="280.0dip" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/last_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0dip" android:src="@drawable/ic_temp" />
+        <com.google.android.material.card.MaterialCardView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="6.0dip" app:cardBackgroundColor="@android:color/transparent" app:cardCornerRadius="15.0dip" app:cardElevation="0.0dip"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <LinearLayout android:orientation="vertical" android:background="#ff113230" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_account_22dp" />
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" android:layout_marginHorizontal="4.0dip">
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/temp_title" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="ALEX SAN" android:includeFontPadding="false" android:fontFamily="@font/sf_pro_text_regular" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="ALEX SAN" android:includeFontPadding="false" android:fontFamily="@font/sf_pro_text_regular" />
+                    </FrameLayout>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star_review" />
+                </LinearLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="10.0dip" android:textColor="@color/white" android:id="@id/temp_description" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Everything about this app represents innovation and it's still in its infancy. It's very scary, laugh out loud, all jokes aside, this is a great tool to use that gives you quite a few benefits that I highly recommend" android:includeFontPadding="false" android:fontFamily="@font/sf_pro_text_regular" />
+                    <TextView android:textSize="10.0dip" android:textColor="@color/white" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Everything about this app represents innovation and it's still in its infancy. It's very scary, laugh out loud, all jokes aside, this is a great tool to use that gives you quite a few benefits that I highly recommend" android:includeFontPadding="false" android:fontFamily="@font/sf_pro_text_regular" />
+                </FrameLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+</LinearLayout>

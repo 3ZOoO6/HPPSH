@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/main_navigation.xml" app:startDestination="@id/topicFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="TopicFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.topic.TopicFragment" android:id="@id/topicFragment" />
+    <fragment android:label="PdfFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.pdf.PdfFragment" android:id="@id/pdfFragment" />
+    <fragment android:label="ArtFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.art.ArtFragment" android:id="@id/artFragment" />
+    <fragment android:label="CharacterFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.character.CharacterFragment" android:id="@id/characterFragment" />
+    <fragment android:label="SettingFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.setting.SettingFragment" android:id="@id/settingFragment" />
+    <fragment android:label="QuestionFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.topic.question.QuestionFragment" android:id="@id/questionFragment" />
+    <fragment android:label="ChatFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.chat.ChatFragment" android:id="@id/chatFragment" />
+    <fragment android:label="HistoryChatFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.topic.history.HistoryChatFragment" android:id="@id/historyChatFragment" />
+    <fragment android:label="DetailCharacterFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.character.detail.DetailCharacterFragment" android:id="@id/detailCharacterFragment" />
+    <fragment android:label="ChatPdfFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.pdf.chat.ChatPdfFragment" android:id="@id/chatPdfFragment" />
+    <fragment android:label="WidgetFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.setting.widget.WidgetFragment" android:id="@id/widgetFragment" />
+    <fragment android:label="LiveSupportFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.setting.support.LiveSupportFragment" android:id="@id/liveSupportFragment" />
+    <fragment android:label="ThemeFragment" android:name="com.android.ntduc.chatgpt.ui.component.main.fragment.setting.theme.ThemeFragment" android:id="@id/themeFragment" />
+</navigation>

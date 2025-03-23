@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="19.0dip" android:width="19.0dip" android:viewportWidth="19.0" android:viewportHeight="19.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <path android:fillColor="@drawable/$ic_arrow_choose_model_bubble__0" android:pathData="M7.576,16.421C7.434,16.421 7.291,16.369 7.179,16.256C6.961,16.039 6.961,15.679 7.179,15.461L12.069,10.571C12.429,10.211 12.429,9.626 12.069,9.266L7.179,4.376C6.961,4.159 6.961,3.799 7.179,3.581C7.396,3.364 7.756,3.364 7.974,3.581L12.864,8.471C13.246,8.854 13.464,9.371 13.464,9.919C13.464,10.466 13.254,10.984 12.864,11.366L7.974,16.256C7.861,16.361 7.719,16.421 7.576,16.421Z" />
+</vector>

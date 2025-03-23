@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:tag="layout/dialog_uploading_0" android:background="@drawable/bg_white_24dp_2" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivClose" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_close_30dp_4" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/ivAvatar" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="6.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:text="@string/chat_pdf" android:layout_below="@id/ivAvatar" android:layout_centerHorizontal="true" android:fontFamily="@font/sf_pro_text_semibold" android:layout_marginHorizontal="10.0dip" />
+    <SeekBar android:id="@id/seekBar" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/seekbar_style" android:thumb="@drawable/custom_thumb" android:layout_below="@id/tvName" android:splitTrack="false" android:layout_marginVertical="10.0dip" />
+    <TextView android:textSize="14.0dip" android:textColor="#ff808080" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_uploading_dialog" android:layout_below="@id/seekBar" android:fontFamily="@font/sf_pro_text_regular" />
+</RelativeLayout>

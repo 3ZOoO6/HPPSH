@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/item_history_chat_view_all_0" android:background="@drawable/bg_item_history_view_all_15dp" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="8.0dip">
+        <TextView android:textSize="14.0dip" android:textColor="@color/text_date" android:id="@id/tvDate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="2023-02-01" android:layout_weight="1.0" android:fontFamily="@font/sf_pro_text_medium" />
+        <ImageView android:id="@id/delete" android:padding="8.0dip" android:visibility="visible" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/ic_delete_19dp" app:tint="@color/black" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bg_chat_user" android:background="@drawable/bg_chat_user_15dp" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:layout_marginHorizontal="8.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ic_user_chat" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_user_chat" />
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/txt_you" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/you" android:fontFamily="@font/sf_pro_text_bold" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+        <View android:background="@color/line_chat_user" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tvQuestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/chatgpt_normal" android:maxLines="2" android:fontFamily="@font/sf_pro_text_medium" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/bg_chat" android:background="@drawable/bg_chat_bot_15dp_2" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginHorizontal="8.0dip">
+        <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/rlLogoChat" android:background="@drawable/bg_circle_bot_oval" android:layout_width="24.0dip" android:layout_height="24.0dip">
+                <ImageView android:id="@id/ivLogoChat" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/txt_now_ai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ai_assistant" android:layout_toRightOf="@id/rlLogoChat" android:fontFamily="@font/sf_pro_text_bold" android:layout_marginStart="10.0dip" />
+        </RelativeLayout>
+        <View android:background="@color/line_chat_bot" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/black" android:ellipsize="end" android:id="@id/tvAnswer" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chatgpt_normal" android:maxLines="3" android:fontFamily="@font/sf_pro_text_regular" />
+    </LinearLayout>
+</LinearLayout>

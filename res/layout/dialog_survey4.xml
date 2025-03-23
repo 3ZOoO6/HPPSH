@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_question_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="What do you think about the app?" android:fontFamily="@font/roboto_medium" />
+    <RadioGroup android:id="@id/grp_question_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/rad_option_1_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="I can’t use it" app:buttonTint="@color/button_tint_survey" />
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/rad_option_1_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Not the app I’m looking for" app:buttonTint="@color/button_tint_survey" />
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/rad_option_1_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Good app, I willl keep using it" app:buttonTint="@color/button_tint_survey" />
+    </RadioGroup>
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/txt_question_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Names of movies you have watched?" android:fontFamily="@font/roboto_medium" />
+    <RadioGroup android:id="@id/grp_question_2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/rad_option_2_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="I can’t use it" app:buttonTint="@color/button_tint_survey" />
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/rad_option_2__2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Not the app I’m looking for" app:buttonTint="@color/button_tint_survey" />
+        <RadioButton android:textSize="14.0sp" android:textColor="@color/button_text_color_survey" android:id="@id/rad_option_2__3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Good app, I willl keep using it" app:buttonTint="@color/button_tint_survey" />
+    </RadioGroup>
+</LinearLayout>

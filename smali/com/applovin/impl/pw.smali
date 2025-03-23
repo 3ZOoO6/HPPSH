@@ -1,0 +1,60 @@
+.class public final synthetic Lcom/applovin/impl/pw;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic b:I
+
+.field public final synthetic c:Lcom/applovin/impl/y4;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lcom/applovin/impl/y4;I)V
+    .locals 0
+
+    iput p2, p0, Lcom/applovin/impl/pw;->b:I
+
+    iput-object p1, p0, Lcom/applovin/impl/pw;->c:Lcom/applovin/impl/y4;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 2
+
+    iget v0, p0, Lcom/applovin/impl/pw;->b:I
+
+    iget-object v1, p0, Lcom/applovin/impl/pw;->c:Lcom/applovin/impl/y4;
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    :pswitch_0
+    invoke-static {v1}, Lcom/applovin/impl/y4;->d(Lcom/applovin/impl/y4;)V
+
+    return-void
+
+    :pswitch_1
+    invoke-static {v1}, Lcom/applovin/impl/y4;->f(Lcom/applovin/impl/y4;)V
+
+    return-void
+
+    :goto_0
+    invoke-static {v1}, Lcom/applovin/impl/y4;->g(Lcom/applovin/impl/y4;)V
+
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
+.end method

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/line" android:background="@color/line" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/topic" android:paddingTop="6.0dip" android:paddingBottom="9.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/ic_topic" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_chat_bottom" app:tint="@color/text_bottom_bar_unselected" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/text_bottom_bar_unselected" android:gravity="center" android:id="@id/title_topic" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/topics" android:fontFamily="@font/sf_pro_text_medium" android:paddingHorizontal="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pdf" android:paddingTop="6.0dip" android:paddingBottom="9.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/ic_pdf" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_pdf_bottom_24dp" app:tint="@color/text_bottom_bar_unselected" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/text_bottom_bar_unselected" android:gravity="center" android:id="@id/title_pdf" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/chat_pdf" android:fontFamily="@font/sf_pro_text_medium" android:paddingHorizontal="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/art" android:paddingTop="6.0dip" android:paddingBottom="9.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/ic_star_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star_1" android:layout_marginEnd="2.0dip" />
+                <ImageView android:layout_gravity="end|center|top" android:id="@id/ic_star_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_star_1" />
+                <ImageView android:layout_gravity="end|center" android:id="@id/ic_star_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/ic_star_1" />
+                <ImageView android:id="@id/ic_art" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_paint_bottom_unselected_24dp" app:tint="@color/text_bottom_bar_unselected" />
+            </FrameLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/text_bottom_bar_unselected" android:gravity="center" android:id="@id/title_art" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ai_art_2" android:fontFamily="@font/sf_pro_text_medium" android:paddingHorizontal="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/character" android:paddingTop="6.0dip" android:paddingBottom="9.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/ic_character" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_speech_bottom" app:tint="@color/text_bottom_bar_unselected" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/text_bottom_bar_unselected" android:gravity="center" android:id="@id/title_character" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/professor" android:fontFamily="@font/sf_pro_text_medium" android:paddingHorizontal="4.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

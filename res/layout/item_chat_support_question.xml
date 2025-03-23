@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:tag="layout/item_chat_support_question_0" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/bg_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.8">
+        <TextView android:textSize="14.0dip" android:textColor="@color/black" android:layout_gravity="end" android:id="@id/content" android:background="@drawable/bg_chat_user_live_24dp" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:fontFamily="@font/sf_pro_text_regular" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

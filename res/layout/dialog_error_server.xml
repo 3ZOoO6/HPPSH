@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:orientation="vertical" android:id="@id/main" android:tag="layout/dialog_error_server_0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" app:cardCornerRadius="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingTop="31.0dip" android:paddingRight="15.0dip" android:paddingBottom="31.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="15.0dip" android:paddingVertical="31.0dip">
+        <ImageView android:layout_gravity="end" android:id="@id/ivClose" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_close_24dp_2" />
+        <TextView android:textSize="30.0dip" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/server_error" android:fontFamily="@font/sf_pro_text_bold" />
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="193.0dip" android:layout_height="196.0dip" android:src="@drawable/ic_server_die" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/tvMsgReward" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="40.0dip" android:text="@string/msg_error_server" android:fontFamily="@font/sf_pro_text_regular" android:layout_marginHorizontal="40.0dip" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
