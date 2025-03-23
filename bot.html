@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>روبوت المحادثة - HPPSH</title>
+  <title>مساعد 3ZiZالذكي - HPPSH</title>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
@@ -11,17 +11,14 @@
     body {
       font-family: 'Tajawal', sans-serif;
     }
-
     :root {
       --primary: #3B82F6;
       --secondary: #1E293B;
     }
-
     .theme-blue {
       background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
       color: white;
     }
-
     .loading-spinner {
       border: 4px solid #ffffff33;
       border-top-color: var(--primary);
@@ -30,7 +27,6 @@
       height: 40px;
       animation: spin 1s linear infinite;
     }
-
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -39,27 +35,26 @@
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center px-4 text-center">
 
-  <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">روبوت المحادثة</h1>
+  <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">مساعد GitHub الذكي</h1>
   <p class="text-gray-300 text-lg max-w-2xl animate__animated animate__fadeInUp">
-    تفاعل مع روبوت الذكاء الاصطناعي في محادثة طبيعية وسلسة، مدعومة بأحدث تقنيات المعالجة اللغوية.
+    اطرح أي سؤال يخص Git أو GitHub وسأساعدك بالأوامر، الشرح، أو إعداد المستودعات!
   </p>
 
   <!-- واجهة محادثة -->
   <div class="bg-white/10 w-full max-w-2xl mt-8 rounded-lg p-4 space-y-4">
     <div class="h-64 overflow-y-auto bg-black/40 p-3 rounded text-right text-sm text-white" id="chatBox">
-      <!-- الرسائل ستُعرض هنا -->
-      <p class="text-gray-400">[بوت]: مرحباً بك! كيف يمكنني مساعدتك اليوم؟</p>
+      <p class="text-gray-400">[بوت]: مرحباً بك! كيف يمكنني مساعدتك في Git أو GitHub؟</p>
     </div>
     <div class="flex space-x-2 rtl:space-x-reverse">
-      <input id="userInput" type="text" placeholder="اكتب رسالتك..." class="flex-1 p-2 rounded bg-black/50 border border-white/20 text-white" />
-      <button onclick="sendMessage()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">إرسال</button>
+      <input id="userInput" type="text" placeholder="مثال: كيف أنشئ مستودع جديد؟" class="flex-1 p-2 rounded bg-black/50 border border-white/20 text-white" />
+      <button onclick="sendMessage()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">أرسل</button>
     </div>
   </div>
 
   <!-- مؤشر تحميل -->
   <div class="mt-6 hidden" id="loading">
     <div class="loading-spinner mx-auto"></div>
-    <p class="text-sm text-gray-400 mt-2">يتم المعالجة...</p>
+    <p class="text-sm text-gray-400 mt-2">جارٍ التفكير...</p>
   </div>
 
   <script>
@@ -72,13 +67,23 @@
       chatBox.innerHTML += `<p class="text-right text-green-300">[أنت]: ${message}</p>`;
       input.value = '';
 
-      // إظهار المؤشر
       const loading = document.getElementById('loading');
       loading.classList.remove('hidden');
 
-      // رد افتراضي بعد ثانية
       setTimeout(() => {
-        chatBox.innerHTML += `<p class="text-gray-400">[بوت]: هذا رد آلي تجريبي. سيتم دمج الذكاء قريباً!</p>`;
+        let botResponse = '[بوت]: عذرًا، لم أفهم سؤالك.';
+
+        if (message.includes('مستودع') || message.includes('repo')) {
+          botResponse = '[بوت]: لإنشاء مستودع جديد على GitHub:\n1. افتح GitHub.\n2. اضغط على "New".\n3. اختر اسم المستودع وحدد الإعدادات.\n4. اضغط Create Repository.';
+        } else if (message.includes('git init')) {
+          botResponse = '[بوت]: الأمر `git init` يستخدم لتهيئة مجلد كمستودع Git محلي.';
+        } else if (message.includes('رفع') || message.includes('push')) {
+          botResponse = '[بوت]: لرفع ملفاتك إلى GitHub:\n1. git add .\n2. git commit -m "تعليق"\n3. git push origin main';
+        } else if (message.includes('README')) {
+          botResponse = '[بوت]: يمكنك إنشاء ملف README.md بمحتوى توضيحي عن المشروع باستخدام Markdown.';
+        }
+
+        chatBox.innerHTML += `<p class="text-gray-400">${botResponse}</p>`;
         loading.classList.add('hidden');
         chatBox.scrollTop = chatBox.scrollHeight;
       }, 1000);
