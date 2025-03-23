@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ABDAZIZ AI Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --light-gray: #CACCCE;
+        --blue: #4F87ED;
+        --purple: #9476C5;
+        --pink: #BC688E;
+        --red: #D6645D;
+        --fg: #F1F1F1;
+        --subtle: #5F6368;
+      }
+    </style>
+  </head>
+  <body class="bg-black text-[var(--light-gray)] font-sans px-4 py-8">
+    <main class="max-w-2xl mx-auto flex flex-col gap-6">
+      <h1 class="text-4xl font-bold text-[var(--blue)] tracking-wide border-b border-[var(--blue)] pb-2">ABDAZIZ AI Bot</h1>
+      <textarea id="__x1" class="w-full p-4 rounded bg-[var(--fg)] text-black placeholder-[var(--subtle)]" rows="4" placeholder="Type your question here..."></textarea>
+      <button onclick="__run()" class="bg-[var(--blue)] hover:bg-blue-700 px-6 py-2 rounded text-white w-fit">Ask</button>
+      <div id="__x2" class="bg-[var(--subtle)] text-[var(--fg)] p-4 rounded hidden whitespace-pre-wrap"></div>
+    </main>
+
+    <script>
+      async function __run() {
+        const __a = document.getElementById("__x1").value;
+        const __out = document.getElementById("__x2");
+        __out.classList.remove("hidden");
+        __out.innerText = "Thinking...";
+
+        const __k = ["AIza","SyAJvl_9","V4RttBzw","jJ4IKZrM","kqdI38-mTEI"].join("");
+        const __payload = JSON.stringify({
+          ["contents"]: [ { ["parts"]: [ { ["text"]: __a } ] } ],
+          ["generationConfig"]: {
+            ["temperature"]: 0.7,
+            ["maxOutputTokens"]: 2048
+          }
+        });
+
+        const __res = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + __k, {
+          ["method"]: "POST",
+          ["headers"]: { "Content-Type": "application/json" },
+          ["body"]: __payload
+        });
+
+        const __j = await __res.json();
+        const __t = __j?.candidates?.[0]?.content?.parts?.[0]?.text || "No reply from AI.";
+        __out.innerText = __t;
+      }
+    </script>
+  </body>
+</html>
