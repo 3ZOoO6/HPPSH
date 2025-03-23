@@ -1,94 +1,47 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="theme-blue">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>مساعد 3ZiZالذكي - HPPSH</title>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Tajawal', sans-serif;
-    }
-    :root {
-      --primary: #3B82F6;
-      --secondary: #1E293B;
-    }
-    .theme-blue {
-      background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
-      color: white;
-    }
-    .loading-spinner {
-      border: 4px solid #ffffff33;
-      border-top-color: var(--primary);
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      animation: spin 1s linear infinite;
-    }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-  </style>
-</head>
-<body class="min-h-screen flex flex-col items-center justify-center px-4 text-center">
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bot</title>
+	</head>
+	<body style="margin: 0; background-color: #222; color: #ddd">
+		<div id="ninchat-container"></div>
+		<input type="button" value="Close session" onclick="Ninchat.close('ninchat-container')"/>
+		<script>
 
-  <h1 class="text-4xl font-bold mb-4 animate__animated animate__fadeInDown">مساعد GitHub الذكي</h1>
-  <p class="text-gray-300 text-lg max-w-2xl animate__animated animate__fadeInUp">
-    اطرح أي سؤال يخص Git أو GitHub وسأساعدك بالأوامر، الشرح، أو إعداد المستودعات!
-  </p>
+(() => {
+	document.getElementById("ninchat-container").style = "width: " + (window.innerWidth) + "px; height: " + (window.innerHeight-23) + "px"
 
-  <!-- واجهة محادثة -->
-  <div class="bg-white/10 w-full max-w-2xl mt-8 rounded-lg p-4 space-y-4">
-    <div class="h-64 overflow-y-auto bg-black/40 p-3 rounded text-right text-sm text-white" id="chatBox">
-      <p class="text-gray-400">[بوت]: مرحباً بك! كيف يمكنني مساعدتك في Git أو GitHub؟</p>
-    </div>
-    <div class="flex space-x-2 rtl:space-x-reverse">
-      <input id="userInput" type="text" placeholder="مثال: كيف أنشئ مستودع جديد؟" class="flex-1 p-2 rounded bg-black/50 border border-white/20 text-white" />
-      <button onclick="sendMessage()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">أرسل</button>
-    </div>
-  </div>
+	let queueId = 'INSERT-QUEUE-ID-HERE'
+	let configKey = 'INSERT-CONFIG-KEY-HERE'
+	let environment = 'default'
 
-  <!-- مؤشر تحميل -->
-  <div class="mt-6 hidden" id="loading">
-    <div class="loading-spinner mx-auto"></div>
-    <p class="text-sm text-gray-400 mt-2">جارٍ التفكير...</p>
-  </div>
+	window.ninchatQueueCallback = (data) => {
+		if (data.event == 'queue_found' && !data.queue_attrs.closed) {
+			window.NinchatAsyncInit = () => {
+				window.Ninchat.embedInit({
+					configKey:   configKey,
+					debug:       true,
+					environment: [environment],
+				})
+			}
 
-  <script>
-    function sendMessage() {
-      const input = document.getElementById('userInput');
-      const message = input.value.trim();
-      if (message === '') return;
+			if (!document.getElementById('ninchat-js')) {
+				let script = document.createElement('script')
+				script.id = 'ninchat-js'
+				script.src = 'https://ninchat.com/js/embed2.min.js'
 
-      const chatBox = document.getElementById('chatBox');
-      chatBox.innerHTML += `<p class="text-right text-green-300">[أنت]: ${message}</p>`;
-      input.value = '';
+				let first = document.getElementsByTagName('script')[0]
+				first.parentNode.insertBefore(script, first)
+			}
+		}
+	}
 
-      const loading = document.getElementById('loading');
-      loading.classList.remove('hidden');
+	let script = document.createElement('script')
+	script.src = 'https://api.ninchat.com/v2/call?callback=ninchatQueueCallback&data=%7b%22action%22:%22describe_queue%22,%22queue_id%22:%22' + queueId + '%22%7d'
+	document.getElementsByTagName('head')[0].appendChild(script)
+})()
 
-      setTimeout(() => {
-        let botResponse = '[بوت]: عذرًا، لم أفهم سؤالك.';
-
-        if (message.includes('مستودع') || message.includes('repo')) {
-          botResponse = '[بوت]: لإنشاء مستودع جديد على GitHub:\n1. افتح GitHub.\n2. اضغط على "New".\n3. اختر اسم المستودع وحدد الإعدادات.\n4. اضغط Create Repository.';
-        } else if (message.includes('git init')) {
-          botResponse = '[بوت]: الأمر `git init` يستخدم لتهيئة مجلد كمستودع Git محلي.';
-        } else if (message.includes('رفع') || message.includes('push')) {
-          botResponse = '[بوت]: لرفع ملفاتك إلى GitHub:\n1. git add .\n2. git commit -m "تعليق"\n3. git push origin main';
-        } else if (message.includes('README')) {
-          botResponse = '[بوت]: يمكنك إنشاء ملف README.md بمحتوى توضيحي عن المشروع باستخدام Markdown.';
-        }
-
-        chatBox.innerHTML += `<p class="text-gray-400">${botResponse}</p>`;
-        loading.classList.add('hidden');
-        chatBox.scrollTop = chatBox.scrollHeight;
-      }, 1000);
-    }
-  </script>
-
-</body>
+		</script>
+	</body>
 </html>
