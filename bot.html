@@ -1,81 +1,75 @@
+
 <!DOCTYPE html>
-<html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HPPSH AI Bot</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      :root {
-        --light-gray: #CACCCE;
-        --blue: #4F87ED;
-        --purple: #9476C5;
-        --pink: #BC688E;
-        --red: #D6645D;
-        --fg: #F1F1F1;
-        --subtle: #5F6368;
-      }
-    </style>
-  </head>
-  <body class="bg-black text-[var(--light-gray)] font-sans px-4 py-8">
-    <main class="max-w-2xl mx-auto flex flex-col gap-6">
-      <h1 class="text-4xl font-bold text-[var(--blue)] tracking-wide border-b border-[var(--blue)] pb-2">HPPSH AI Bot</h1>
-      <textarea id="__x1" class="w-full p-4 rounded bg-[var(--fg)] text-black placeholder-[var(--subtle)]" rows="4" placeholder="Type your question here..."></textarea>
-      <button onclick="__run()" class="bg-[var(--blue)] hover:bg-blue-700 px-6 py-2 rounded text-white w-fit">Ask</button>
-      <div id="__x2" class="bg-[var(--subtle)] text-[var(--fg)] p-4 rounded hidden whitespace-pre-wrap"></div>
-    
-<div class="mt-10 text-sm text-gray-400 text-center">
-  <p>تابعنا:</p>
-  <a href="https://www.snapchat.com/add/bx90_9?share_id=advDbNuiL0c&locale=ar-EG" class="underline block">Snapchat</a>
-  <a href="https://www.snapchat.com/add/bx90_9?share_id=advDbNuiL0c&locale=ar-EG" class="underline block">Instagram</a>
-  <p class="mt-4">التطبيق يعمل على:</p>
-  <p>http://localhost:3000</p>
-  <p>http://192.168.100.46:3000</p>
-</div>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>بوت HPPSH الذكي</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0f0f0f;
+      font-family: 'Courier New', monospace;
+    }
+    .bot {
+      background-color: #1e293b;
+      color: #00ffcc;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      max-width: 80%;
+    }
+    .user {
+      background-color: #334155;
+      color: #ffffff;
+      padding: 12px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      margin-right: auto;
+      max-width: 80%;
+    }
+  </style>
+</head>
+<body class="text-white p-4">
+  <div class="max-w-3xl mx-auto mt-6">
+    <h1 class="text-3xl mb-4 text-center font-bold text-cyan-400">مساعد HPPSH الذكي</h1>
+    <div id="chatBox" class="bg-black/60 p-4 rounded h-[60vh] overflow-y-scroll mb-4 border border-cyan-700"></div>
+    <div class="flex gap-2">
+      <input id="userInput" type="text" placeholder="اكتب سؤالك للبوت" class="flex-1 p-2 rounded bg-gray-800 text-white">
+      <button onclick="askBot()" class="bg-cyan-600 px-4 py-2 rounded hover:bg-cyan-700">أرسل</button>
+    </div>
+  </div>
 
-</main>
+  <script>
+    const chatBox = document.getElementById("chatBox");
+    const userInput = document.getElementById("userInput");
 
-    <script>
-      async function __run() {
-        const __a = document.getElementById("__x1").value;
-        const __out = document.getElementById("__x2");
-        __out.classList.remove("hidden");
-        __out.innerText = "Thinking...";
+    const apiKey = "AIzaSyAcvGNTQz4cCvHzo0xDRxPPlOgflgxtt3I";
+    const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
-        const __k = ["AIza","SyAJvl_9","V4RttBzw","jJ4IKZrM","kqdI38-mTEI"].join("");
-        const __payload = JSON.stringify({
-          ["contents"]: [ { ["parts"]: [ { ["text"]: __a } ] } ],
-          ["generationConfig"]: {
-            ["temperature"]: 0.7,
-            ["maxOutputTokens"]: 2048
-          }
-        });
+    async function askBot() {
+      const text = userInput.value.trim();
+      if (!text) return;
 
-        const __res = await fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + __k, {
-          ["method"]: "POST",
-          ["headers"]: { "Content-Type": "application/json" },
-          ["body"]: __payload
-        });
+      // عرض رسالة المستخدم
+      chatBox.innerHTML += `<div class="user text-right">${text}</div>`;
+      chatBox.scrollTop = chatBox.scrollHeight;
+      userInput.value = "";
 
-        const __j = await __res.json();
-        const __t = __j?.candidates?.[0]?.content?.parts?.[0]?.text || "No reply from AI.";
-        __out.innerText = __t;
-      }
-    </script>
-  </body>
+      // إرسال إلى Gemini API
+      const res = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text }] }]
+        })
+      });
+
+      const data = await res.json();
+      const botReply = data?.candidates?.[0]?.content?.parts?.[0]?.text || "عذرًا، لم أفهم سؤالك.";
+      chatBox.innerHTML += `<div class="bot">${botReply}</div>`;
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  </script>
+</body>
 </html>
-<script>
-const apiKey = "AIzaSyAcvGNTQz4cCvHzo0xDRxPPlOgflgxtt3I";
-const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-async function askBot(text) {
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text }] }]
-    })
-  });
-  const data = await response.json();
-  console.log("Bot Response:", data);
-}
-</script>
