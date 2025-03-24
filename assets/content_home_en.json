@@ -1,0 +1,252 @@
+{
+  "genres": [
+    {
+      "icon": "ic_education",
+      "Topic": "Education",
+      "Title": "Text Summary",
+      "Description": "Quickly grasp the key points of any contents!",
+      "Detail": "\"This prompt helps you improve your content and make it more engaging and effective! \nEasily use the prompt by replacing the highlighted text: \nProvide suggestions to improve the quality and effectiveness of a given piece of content.\nOriginal content: [What is the content that needs to be improved? E.g. blog post, article, etc.].\nGoal: [What is the goal of the content? E.g. to inform, entertain, persuade, etc.].\nTarget audience: [Who is the target audience for the content?].\nWriting style and tone: [Choose writing styles and tones you would want].\"",
+      "Text": "Summarize a piece of text in a given length.\nOriginal text: [What is the text that needs to be summarized?]\nSummary length: [Enter the desired length of the summary in words or sentences].\nPurpose: [What is the purpose of the summary? E.g. to provide an overview, to highlight key points, etc.]\nWriting style and tone: [Choose writing styles and tones you would want]."
+    },
+    {
+      "icon": "ic_education",
+      "Topic": "Education",
+      "Title": "Content Improve",
+      "Description": "Improve your content and make it more engaging and effective.",
+      "Detail": "This prompt helps you improve your content and make it more engaging and effective! \nEasily use the prompt by replacing the highlighted text: \nProvide suggestions to improve the quality and effectiveness of a given piece of content.\nOriginal content: [What is the content that needs to be improved? E.g. blog post, article, etc.].\nGoal: [What is the goal of the content? E.g. to inform, entertain, persuade, etc.].\nTarget audience: [Who is the target audience for the content?].\nWriting style and tone: [Choose writing styles and tones you would want].",
+      "Text": "Provide suggestions to improve the quality and effectiveness of a given piece of content.\nOriginal content: [What is the content that needs to be improved? E.g. blog post, article, etc.].\nGoal: [What is the goal of the content? E.g. to inform, entertain, persuade, etc.].\nTarget audience: [Who is the target audience for the content?].\nWriting style and tone: [Choose writing styles and tones you would want]."
+    },
+    {
+      "icon": "ic_education",
+      "Topic": "Education",
+      "Title": "Sentence Expander",
+      "Description": "Make your writing more descriptive and engaging!",
+      "Detail": "This prompt helps make your writing more descriptive and engaging! \nEasily use the prompt by replacing the highlighted text: \n\"Expand a given sentence to make it more descriptive.\nSentence: [Enter the sentence that needs to be expanded].\nAdditional Details: [Provide any additional details or information that could be added to the sentence]. (optional)\nLength Limit: [Enter the desired length of the expanded sentence in words].\nWriting style and tone: [Choose writing styles and tones you would want].\"",
+      "Text": "Expand a given sentence to make it more descriptive.\nSentence: [Enter the sentence that needs to be expanded].\nAdditional Details: [Provide any additional details or information that could be added to the sentence]. (optional)\nLength Limit: [Enter the desired length of the expanded sentence in words].\nWriting style and tone: [Choose writing styles and tones you would want]."
+    },
+    {
+      "icon": "ic_education",
+      "Topic": "Education",
+      "Title": "Grammar And Syntax Edit",
+      "Description": "Never let a grammar mistake or typos slip through ever again!",
+      "Detail": "This prompt helps to find any grammar mistake or typos slip\nEasily use the prompt by replacing the highlighted text: \n\"[Paste the text you want to correct here] \nCorrect and highlight all the grammar and language mistakes in the text above, even the small mistakes. \nProvide a detailed explanation for each mistake, then re-write the text with the corrections.\nOrganize information in a chart so its easy to understand. \"",
+      "Text": "[Paste the text you want to correct here] \nCorrect and highlight all the grammar and language mistakes in the text above, even the small mistakes. \nProvide a detailed explanation for each mistake, then re-write the text with the corrections.\nOrganize information in a chart so its easy to understand. "
+    },
+    {
+      "icon": "ic_education",
+      "Topic": "Education",
+      "Title": "Paraphrase Content",
+      "Description": "Create unique and original content quickly and easily.",
+      "Detail": "This prompt helps to find any grammar mistake or typos slip\nEasily use the prompt by replacing the highlighted text: \nParaphrase a given piece of text to make it unique and original.\nOriginal content: [What is the content that needs to be paraphrased?].\nPurpose: [What is the purpose of the paraphrasing? E.g. to avoid plagiarism, to simplify language, etc.].\nLength limit: [Enter the desired length of the paraphrased content in words.",
+      "Text": "Paraphrase a given piece of text to make it unique and original.\nOriginal content: [What is the content that needs to be paraphrased?].\nPurpose: [What is the purpose of the paraphrasing? E.g. to avoid plagiarism, to simplify language, etc.].\nLength limit: [Enter the desired length of the paraphrased content in words.]"
+    },
+    {
+      "icon": "ic_entertain",
+      "Topic": "Entertain",
+      "Title": "Create a Midjourney Prompt",
+      "Description": "Easily bring images to life with your text.",
+      "Detail": "This prompt helps you  bring images to life with your text! \nEasily use the prompt by replacing the highlighted text:\n\"\"Generate a prompt for MidJourney, a text-to-image AI\nImage:[image you want], \nDescriptive keywords: [How would you like to describe the image] (optional)\nPhotographic style: [Describe the photographic style]. (optional)\nTone: [describe the tone you want in the results]. (optional)\nObject: [identify the main object in the image] \nAction: [describe what the object is doing, or what you want it to do?] (optional)\"\"",
+      "Text": "Generate a prompt for MidJourney, a text-to-image AI\nImage:[image you want], \nDescriptive keywords: [How would you like to describe the image] (optional)\nPhotographic style: [Describe the photographic style]. (optional)\nTone: [describe the tone you want in the results]. (optional)\nObject: [identify the main object in the image] \nAction: [describe what the object is doing, or what you want it to do?] (optional)"
+    },
+    {
+      "icon": "ic_entertain",
+      "Topic": "Entertain",
+      "Title": "Compose a songs",
+      "Description": "Let your creativity take center stage and start writing song lyrics that express your unique",
+      "Detail": "This prompt helps you quickly grasp the key points of any content! \nEasily use the prompt by replacing the highlighted text:\nWrite Song Lyrics\nSong genre:[genre of the song (such as pop, rock, hip-hop)].\nMood and tone:[mood and tone (happy, romantic, melancholic, etc.)].\nTheme: [center theme or key message].\nSong structure: [Structure outline. For example Intro-Verse-Chorus-Bridge-Chorus-Outro]. (optional)\nLyrics: [Specify what you want to appear in the songs (Consider including rhyming patterns, wordplay, and poetic devices, or just a brief description of the song like a song to encourage people going through tough times).].\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional).",
+      "Text": "Write Song Lyrics\nSong genre:[genre of the song (such as pop, rock, hip-hop)].\nMood and tone:[mood and tone (happy, romantic, melancholic, etc.)].\nTheme: [center theme or key message].\nSong structure: [Structure outline. For example Intro-Verse-Chorus-Bridge-Chorus-Outro]. (optional)\nLyrics: [Specify what you want to appear in the songs (Consider including rhyming patterns, wordplay, and poetic devices, or just a brief description of the song like a song to encourage people going through tough times).].\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional)."
+    },
+    {
+      "icon": "ic_entertain",
+      "Topic": "Entertain",
+      "Title": "Write interesting story",
+      "Description": "Spark your creativity and captivate your readers with an imaginative plot",
+      "Detail": "This prompt helps you Spark your creativity and captivate your readers with an imaginative plot.\nEasily use the prompt by replacing the highlighted text:\nWrite a Short Story\nPurpose of the story: [Purpose 1], [Purpose 2],...\nSetting: [Description of the time and place where the story takes place].\nCharacters: [Introduction of the main characters and their personalities].\nConflict: [Description of the conflict that the characters face].\nPlot: [Outline of the events that take place in the story, including any twists and turns].\nResolution: [Resolution to the conflict and explanation of how the characters are affected].\nTheme: [Theme of the story, if there is one].\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional).",
+      "Text": "Write a Short Story\nPurpose of the story: [Purpose 1], [Purpose 2],...\nSetting: [Description of the time and place where the story takes place].\nCharacters: [Introduction of the main characters and their personalities].\nConflict: [Description of the conflict that the characters face].\nPlot: [Outline of the events that take place in the story, including any twists and turns].\nResolution: [Resolution to the conflict and explanation of how the characters are affected].\nTheme: [Theme of the story, if there is one].\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional)."
+    },
+    {
+      "icon": "ic_entertain",
+      "Topic": "Entertain",
+      "Title": "Love letter for your crush",
+      "Description": "Show someone special how much you care!",
+      "Detail": "This prompt helps you Show someone special how much you care! \nEasily use the prompt by replacing the highlighted text:\nWrite a love letter.\nRecipient: [Who is the letter addressed to?].\nRelationship: [What is your relationship to the recipient?].\nEmotions: [What emotions do you want to convey? E.g. love, admiration, appreciation, etc.].\nMemories: [Share a few special memories or moments you've shared together].\nFuture: [What do you hope for in the future of your relationship?].",
+      "Text": "Write a love letter.\nRecipient: [Who is the letter addressed to?].\nRelationship: [What is your relationship to the recipient?].\nEmotions: [What emotions do you want to convey? E.g. love, admiration, appreciation, etc.].\nMemories: [Share a few special memories or moments you've shared together].\nFuture: [What do you hope for in the future of your relationship?]."
+    },
+    {
+      "icon": "ic_entertain",
+      "Topic": "Entertain",
+      "Title": "A song recommender",
+      "Description": "Find a list of songs that fit your music taste",
+      "Detail": "This prompt helps you find a list of songs that fit your music taste! \nEasily use the prompt by replacing the highlighted text:\nI want you to act as a song recommender. I will provide you with a song and you will create a playlist of [Enter number of songs you want] songs that are similar to the given song. And you will provide a playlist name and description for the playlist. Do not choose songs that are same name or artist. Do not write any explanations or other words, just reply with the playlist name, description and the songs. My first song is [Enter name and singer of your favorite song]. ",
+      "Text": "I want you to act as a song recommender. I will provide you with a song and you will create a playlist of [Enter number of songs you want] songs that are similar to the given song. And you will provide a playlist name and description for the playlist. Do not choose songs that are same name or artist. Do not write any explanations or other words, just reply with the playlist name, description and the songs. My first song is [Enter name and singer of your favorite song]. "
+    },
+    {
+      "icon": "ic_career",
+      "Topic": "Career",
+      "Title": "Interview Questions",
+      "Description": "Find the right fit for your company with well-crafted interview questions.",
+      "Detail": "This prompt helps you find the right fit for your company with well-crafted interview questions.! \nEasily use the prompt by replacing the highlighted text:\nCome up with questions to ask in an interview for a specific job.\nJob position: [What position are the interview questions for?].\nRole responsibilities: [List the key responsibilities of the job].\nRequired skills: [What skills are required for the job?].\nPersonal qualities: [What personal qualities are important for the job?].\nCompany culture: [What is the company culture like?].",
+      "Text": "Come up with questions to ask in an interview for a specific job.\nJob position: [What position are the interview questions for?].\nRole responsibilities: [List the key responsibilities of the job].\nRequired skills: [What skills are required for the job?].\nPersonal qualities: [What personal qualities are important for the job?].\nCompany culture: [What is the company culture like?]."
+    },
+    {
+      "icon": "ic_career",
+      "Topic": "Career",
+      "Title": "Resume",
+      "Description": "Showcase your skills and experience with a professional and compelling resume",
+      "Detail": "This prompt helps you Showcase your skills and experience with a professional and compelling resume. \nEasily use the prompt by replacing the highlighted text:\n\"Write a resume for a job application.\nPersonal information: [Name, address, phone number, email address, etc.].\nObjective: [What are your career goals?].\nEducation: [List your educational qualifications].\nWork experience: [List your work experience and job responsibilities].\nSkills: [List your skills and certifications].\nReferences: [Provide a list of references].\"",
+      "Text": "Write a resume for a job application.\nPersonal information: [Name, address, phone number, email address, etc.].\nObjective: [What are your career goals?].\nEducation: [List your educational qualifications].\nWork experience: [List your work experience and job responsibilities].\nSkills: [List your skills and certifications].\nReferences: [Provide a list of references]."
+    },
+    {
+      "icon": "ic_career",
+      "Topic": "Career",
+      "Title": "Ask An Expert",
+      "Description": "Connect with experts and propel your success with the perfect cold message.",
+      "Detail": "This prompt helps connect with experts and propel your success with the perfect cold message.! \nEasily use the prompt by replacing the highlighted text:\nWrite a message to Ask An Expert\nMy name: [Name]. \nReceiver's name: [Name].\nMy background: [Your back ground] (optional0.\nPurpose: [the reason you are reaching out to the expert].\nMy knowledge: [Demonstrate your understanding of the expert's field and the specific topics they are knowledgeable about.]. (optional)\nProvide context: [Explain why you believe the expert could be helpful in your specific situation, and why your request is relevant to their expertise.]\nOffer value: [How the expert can benefit from engaging with you] (optional)\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional).",
+      "Text": "Write a message to Ask An Expert\nMy name: [Name]. \nReceiver's name: [Name].\nMy background: [Your back ground] (optional0.\nPurpose: [the reason you are reaching out to the expert].\nMy knowledge: [Demonstrate your understanding of the expert's field and the specific topics they are knowledgeable about.]. (optional)\nProvide context: [Explain why you believe the expert could be helpful in your specific situation, and why your request is relevant to their expertise.]\nOffer value: [How the expert can benefit from engaging with you] (optional)\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional)."
+    },
+    {
+      "icon": "ic_career",
+      "Topic": "Career",
+      "Title": "Rejection Letter ",
+      "Description": "Create a polite letter that delicately communicates your rejection.",
+      "Detail": "\"This prompt helps you create a polite letter that delicately communicates your rejection. \nEasily use the prompt by replacing the highlighted text:\"",
+      "Text": "Write a Rejection Letter\nCandidate's name: [Candidate's name].\nCandidate's applied position: [Position].\nCompany's name: [Company's name].\nMy name: [Your name and position].\nFeed back: [Feedback] (optional).\nLength limit: [Enter a number] words.."
+    },
+    {
+      "icon": "ic_career",
+      "Topic": "Career",
+      "Title": "Job Description",
+      "Description": " Attract your ideal candidate with the perfect job description!",
+      "Detail": "This prompt helps attract your ideal candidate with the perfect job description!! \nEasily use the prompt by replacing the highlighted text:\n\"Write a job description for a [Job Title] role at [Company Name].\nCompany's name: [Company/brand name].\nIndustry: [Industry] (optional).\nWhat It provide:[Product/services].\nResponsibilities: [Main responsibilities and duties].\nQualifications and skills: [Required qualifications and skills].\nDesired skills, traits, and qualities: [Desired skills, traits, and qualities].\nCompany benefits: [Benefits and perks the company offers].\nCompany's culture [The company's work culture and environment].\nHow to apply: [Deadline for submitting applications, email, phone, etc].\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional).\"",
+      "Text": "Write a job description for a [Job Title] role at [Company Name].\nCompany's name: [Company/brand name].\nIndustry: [Industry] (optional).\nWhat It provide:[Product/services].\nResponsibilities: [Main responsibilities and duties].\nQualifications and skills: [Required qualifications and skills].\nDesired skills, traits, and qualities: [Desired skills, traits, and qualities].\nCompany benefits: [Benefits and perks the company offers].\nCompany's culture [The company's work culture and environment].\nHow to apply: [Deadline for submitting applications, email, phone, etc].\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional)."
+    },
+    {
+      "icon": "ic_career",
+      "Topic": "Career",
+      "Title": "JobApplication Email",
+      "Description": "Compose to stand out from the crowd.",
+      "Detail": "This prompt helps you compose an email to stand out from the crowd.! \nEasily use the prompt by replacing the highlighted text:\n\"Write an email to pitch my job application\nI need a subject line to stand out.\nName of the company and the role: [Insert the company and the role you're applying for]\nYour information: [Insert your name and contact info]\nReasons you're applying: [What makes you apply for this role] \nYour competitive advantage: [Reasons why the employer should hire you]\nAttached items in the email: [What you include in the email to impress]\nA formal and exciting closing \"",
+      "Text": "Write an email to pitch my job application\nI need a subject line to stand out.\nName of the company and the role: [Insert the company and the role you're applying for]\nYour information: [Insert your name and contact info]\nReasons you're applying: [What makes you apply for this role] \nYour competitive advantage: [Reasons why the employer should hire you]\nAttached items in the email: [What you include in the email to impress]\nA formal and exciting closing "
+    },
+    {
+      "icon": "ic_email",
+      "Topic": "Email",
+      "Title": "Interview Invitation Letter ",
+      "Description": "Help your interviewees be well-prepared for the interview.",
+      "Detail": "This prompt helps your interviewees be well-prepared for the interview. \nEasily use the prompt by replacing the highlighted text:\nI need an interview invitation email for the following details\nName of the candidate: [Name]\nPosition interviewed: [Position]\nCompany: [Your company's name] \nCompany address: [Your Company address]\nInterview method: [Insert the method of interview: Direct, Online, etc]\nInterviewer: [Name of the Interviewer - Current position]\nNotes: [Things that the interviewee needs to bring before coming to the interview or something they need to bear in mind, etc]\nTime the interviewee needs to confirm the invitation: [Insert the time]\nOffer assistance: [Let the recipient know that you are available to assist with any questions or concerns they may have, and provide your contact information]. \nLength limit: [Enter a number] words.\nA friendly closing",
+      "Text": "I need an interview invitation email for the following details\nName of the candidate: [Name]\nPosition interviewed: [Position]\nCompany: [Your company's name] \nCompany address: [Your Company address]\nInterview method: [Insert the method of interview: Direct, Online, etc]\nInterviewer: [Name of the Interviewer - Current position]\nNotes: [Things that the interviewee needs to bring before coming to the interview or something they need to bear in mind, etc]\nTime the interviewee needs to confirm the invitation: [Insert the time]\nOffer assistance: [Let the recipient know that you are available to assist with any questions or concerns they may have, and provide your contact information]. \nLength limit: [Enter a number] words.\nA friendly closing"
+    },
+    {
+      "icon": "ic_email",
+      "Topic": "Email",
+      "Title": "Job Offer Email ",
+      "Description": "Improve your chances of getting a \"yes!\" in response to your offer.",
+      "Detail": "This prompt helps you improve your chances of getting a \"yes!\" in response to your offer! \nEasily use the prompt by replacing the highlighted text:\nWrite a job offer email to my potential candidate\nCandidate name: [Name of your best candidate]\nJob Position: [Name of the role] at [Company's name]\nStart date: [Insert the date that the candidate will start working]\nPlace: [Company address for the role]\nProbationary Period: [Insert the period of time]\nSalary and benefits of the job position: [Insert the salary amount and the benefits your candidate will receive]\nRelated info: [Additional information about the policies of the company/organization]\nOffer assistance: [Let the recipient know that you are available to assist with any questions or concerns they may have, and provide your contact information]. \nA warm welcome ",
+      "Text": "Write a job offer email to my potential candidate\nCandidate name: [Name of your best candidate]\nJob Position: [Name of the role] at [Company's name]\nStart date: [Insert the date that the candidate will start working]\nPlace: [Company address for the role]\nProbationary Period: [Insert the period of time]\nSalary and benefits of the job position: [Insert the salary amount and the benefits your candidate will receive]\nRelated info: [Additional information about the policies of the company/organization]\nOffer assistance: [Let the recipient know that you are available to assist with any questions or concerns they may have, and provide your contact information]. \nA warm welcome "
+    },
+    {
+      "icon": "ic_email",
+      "Topic": "Email",
+      "Title": "Recurring Email Newsletter ",
+      "Description": "Build customer loyalty and drive business growth with a regular newsletter!",
+      "Detail": "This prompt helps you build customer loyalty and drive business growth with a regular newsletter. \nEasily use the prompt by replacing the highlighted text:\nWrite a Recurring Email Newsletter\nName: [Your name, position].\nCompany: [Your company's name] .\nInformation about the recipient: [name, job, industry,..].\nPurpose: [what you want to include] .\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional).",
+      "Text": "Write a Recurring Email Newsletter\nName: [Your name, position].\nCompany: [Your company's name] .\nInformation about the recipient: [name, job, industry,..].\nPurpose: [what you want to include] .\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional)."
+    },
+    {
+      "icon": "ic_email",
+      "Topic": "Email",
+      "Title": "Welcome / Confirmation Email ",
+      "Description": "Let's start things off on the right foot with a friendly welcome to your new customer",
+      "Detail": "This prompt helps you start things off on the right foot with a friendly welcome to your new customer. \nEasily use the prompt by replacing the highlighted text:\nWrite a Welcome/confirmation email\nName: [Your name, position]\nCompany: [Your company's name] \nConfirm the details: [Include confirmation of the details of the interaction or transaction the recipient has had with your company, such as a purchase or subscription]. \nProvide next steps: [Include any necessary information or instructions for the recipient on what they should do next, such as setting up an account or accessing their purchase]. \nOffer assistance: [Let the recipient know that you are available to assist with any questions or concerns they may have, and provide your contact information]. \nA friendly closing\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional).",
+      "Text": "Write a Welcome/confirmation email\nName: [Your name, position]\nCompany: [Your company's name] \nConfirm the details: [Include confirmation of the details of the interaction or transaction the recipient has had with your company, such as a purchase or subscription]. \nProvide next steps: [Include any necessary information or instructions for the recipient on what they should do next, such as setting up an account or accessing their purchase]. \nOffer assistance: [Let the recipient know that you are available to assist with any questions or concerns they may have, and provide your contact information]. \nA friendly closing\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional)."
+    },
+    {
+      "icon": "ic_marketing",
+      "Topic": "Marketing",
+      "Title": "Marketing Strategy Template ",
+      "Description": "Turn prospectives into your customers with detailed plan.",
+      "Detail": "This prompt helps you turn prospectives into your customers with detailed plan! \nEasily use the prompt by replacing the highlighted text:\nSuggest a marketing strategy for my brand\nProduct/Service: [What product or service are you offering?]\nTarget audience: [Your ideal customers] \nCustomer's insight: [Your customer's needs, preferences, and behavior]\nObjectives: [What you want to achieve via this marketing strategy]\nBudget: [How much you are willing to spend?]\nCompetitors: [What are their strengths and weaknesses?]",
+      "Text": "Suggest a marketing strategy for my brand\nProduct/Service: [What product or service are you offering?]\nTarget audience: [Your ideal customers] \nCustomer's insight: [Your customer's needs, preferences, and behavior]\nObjectives: [What you want to achieve via this marketing strategy]\nBudget: [How much you are willing to spend?]\nCompetitors: [What are their strengths and weaknesses?]"
+    },
+    {
+      "icon": "ic_marketing",
+      "Topic": "Marketing",
+      "Title": "AIDA Frame Work ",
+      "Description": "Create persuasive and effective copy that follows the AIDA framework.",
+      "Detail": "This prompt helps you create persuasive and effective copy that follows the AIDA framework.! \nEasily use the prompt by replacing the highlighted text:\nWrite a copy that follows the AIDA framework to create a persuasive message.\nProduct/Service: [What product or service are you offering?].\nAttention: [How will you capture the reader's attention?]. (optional)\nInterest: [What will you do to keep the reader interested?]. (optional)\nDesire: [How will you create a desire for your product or service?]. (optional)\nAction: [What is the call-to-action to get the reader to take the next step?]. (optional)\nLength Limit: [Enter the desired length of the copy in words]. (optional)\nWriting style and tone: [Choose writing styles and tones you would want]. (optional)",
+      "Text": "Write a copy that follows the AIDA framework to create a persuasive message.\nProduct/Service: [What product or service are you offering?].\nAttention: [How will you capture the reader's attention?]. (optional)\nInterest: [What will you do to keep the reader interested?]. (optional)\nDesire: [How will you create a desire for your product or service?]. (optional)\nAction: [What is the call-to-action to get the reader to take the next step?]. (optional)\nLength Limit: [Enter the desired length of the copy in words]. (optional)\nWriting style and tone: [Choose writing styles and tones you would want]. (optional)"
+    },
+    {
+      "icon": "ic_marketing",
+      "Topic": "Marketing",
+      "Title": "Press Release",
+      "Description": "Get the word out about your latest news and events!",
+      "Detail": "This prompt helps you get the word out about your latest news and events! \nEasily use the prompt by replacing the highlighted text:\nWrite a press release for a company or organization.\nCompany/Organization: [Name of the company or organization issuing the press release].\nNews/Announcement: [What is the news or announcement that the press release is about?].\nKey Points: [What are the most important points to convey in the press release?].\nContact Information: [Who should the press contact for more information?].\nLength Limit: [Enter the desired length of the press release in words].\nWriting style and tone: [Choose writing styles and tones you would want].",
+      "Text": "Write a press release for a company or organization.\nCompany/Organization: [Name of the company or organization issuing the press release].\nNews/Announcement: [What is the news or announcement that the press release is about?].\nKey Points: [What are the most important points to convey in the press release?].\nContact Information: [Who should the press contact for more information?].\nLength Limit: [Enter the desired length of the press release in words].\nWriting style and tone: [Choose writing styles and tones you would want]."
+    },
+    {
+      "icon": "ic_marketing",
+      "Topic": "Marketing",
+      "Title": "Unique Value Propositions ",
+      "Description": "Highlight the key benefit of your product/service.",
+      "Detail": "This prompt helps you quickly highlight the key benefit of your product/service! \nEasily use the prompt by replacing the highlighted text:\nWrite a copy that emphasizes the unique value of a product or service.\nProduct/Service: [What product or service are you offering?].\nUnique Value: [What is the unique value or benefit that your product or service provides?]. (optional)\nTarget Market: [Who is your target market?]. (optional)\nCompetition: [How does your product or service differ from the competition?]. (optional)\nLength Limit: [Enter the desired length of the copy in words].\nWriting Style and Tone: [Choose from a list of writing styles and tones].",
+      "Text": "Write a copy that emphasizes the unique value of a product or service.\nProduct/Service: [What product or service are you offering?].\nUnique Value: [What is the unique value or benefit that your product or service provides?]. (optional)\nTarget Market: [Who is your target market?]. (optional)\nCompetition: [How does your product or service differ from the competition?]. (optional)\nLength Limit: [Enter the desired length of the copy in words].\nWriting Style and Tone: [Choose from a list of writing styles and tones]."
+    },
+    {
+      "icon": "ic_marketing",
+      "Topic": "Marketing",
+      "Title": "FAQs",
+      "Description": "Make it easy for your customers to find the information they need.",
+      "Detail": "This prompt helps you make it easy for your customers to find the information they need.! \nEasily use the prompt by replacing the highlighted text:\nWrite a set of frequently asked questions (FAQs) for a product or service.\nTopic: [What is the topic of the FAQs? E.g. product, service, company, etc.].",
+      "Text": "Write a set of frequently asked questions (FAQs) for a product or service.\nTopic: [What is the topic of the FAQs? E.g. product, service, company, etc.]."
+    },
+    {
+      "icon": "ic_socialmedia",
+      "Topic": "Social Media",
+      "Title": "Youtube Video Description",
+      "Description": "Craft a captivating depiction to skyrocket the reach of your video and make it go viral.",
+      "Detail": "This prompt helps you craft a captivating depiction to skyrocket the reach of your video and make it go viral.! \nEasily use the prompt by replacing the highlighted text:\nWrite a Youtube Video Description\nVideo's title: [title]\nKey Points: [Key takeaways or highlights of the video].\nExplain my video: [video brief].\nCTA: [what do you want from viewers?]\nAdditional Resources: [additional resources or links related to the video topic]. (optional)\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional).",
+      "Text": "Write a Youtube Video Description\nVideo's title: [title]\nKey Points: [Key takeaways or highlights of the video].\nExplain my video: [video brief].\nCTA: [what do you want from viewers?]\nAdditional Resources: [additional resources or links related to the video topic]. (optional)\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional)."
+    },
+    {
+      "icon": "ic_socialmedia",
+      "Topic": "Social Media",
+      "Title": "Intro to a video script ",
+      "Description": "Generate a captivating video script to bring",
+      "Detail": "This prompt helps you generate a captivating video script to bring! \nEasily use the prompt by replacing the highlighted text:\nWrite a intro to a video script\nTopic: [Brief Overview of Video Topic].\nObjective: [Objective of Video].\nKey Takeaways: [Key Takeaways].\nPreview: [Peview of What Will Be Covered]. (optional)\nHook: [Insert a hook or attention-grabbing statement] (optional)\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional).",
+      "Text": "Write a intro to a video script\nTopic: [Brief Overview of Video Topic].\nObjective: [Objective of Video].\nKey Takeaways: [Key Takeaways].\nPreview: [Peview of What Will Be Covered]. (optional)\nHook: [Insert a hook or attention-grabbing statement] (optional)\nLength limit: [Enter a number] words.\nTarget audience: [Who would most likely read this?] (optional).\n"
+    },
+    {
+      "icon": "ic_socialmedia",
+      "Topic": "Social Media",
+      "Title": "Create a Tiktok video ",
+      "Description": "A detailed script is the next step to your millions-view video.",
+      "Detail": "This prompt helps you create your millions-view video! \nEasily use the prompt by replacing the highlighted text:\nWrite a how-to video script \nTopic: [Brief overview of what tutorial you are giving to viewers]\nObjective: [Purpose of the video, for example: Sell your service / solution.]\nHook: [What values shall viewers receive from the video]\nHow to: [Step-by-step process]\nTarget audience: [Who would most likely watch this tutorial video?]\nCall to action: [What you want the viewers to do after watching your tutorial?\nFor example: Add a product from Tik Tok Shop to cart.]",
+      "Text": "Write a how-to video script \nTopic: [Brief overview of what tutorial you are giving to viewers]\nObjective: [Purpose of the video, for example: Sell your service / solution.]\nHook: [What values shall viewers receive from the video]\nHow to: [Step-by-step process]\nTarget audience: [Who would most likely watch this tutorial video?]\nCall to action: [What you want the viewers to do after watching your tutorial?\nFor example: Add a product from Tik Tok Shop to cart.]"
+    },
+    {
+      "icon": "ic_socialmedia",
+      "Topic": "Social Media",
+      "Title": "Music video script ",
+      "Description": "Craft a top-trending MV script in a matter of seconds",
+      "Detail": "This prompt helps you Craft a top-trending MV script in a matter of seconds! \nEasily use the prompt by replacing the highlighted text:\nI need a script for my Music Video\nTitle: [provide the tittle of the MV]\nVideo theme: [identify the theme of the MV]\nMusic genre: [provide the genre of the song]\nMusic theme: [identify the main theme of the song]\nCharacters: [provide a short brief about the protagonists of the music video]\nLength: [how long do you want your video to be]",
+      "Text": "I need a script for my Music Video\nTitle: [provide the tittle of the MV]\nVideo theme: [identify the theme of the MV]\nMusic genre: [provide the genre of the song]\nMusic theme: [identify the main theme of the song]\nCharacters: [provide a short brief about the protagonists of the music video]\nLength: [how long do you want your video to be]"
+    },
+    {
+      "icon": "ic_socialmedia",
+      "Topic": "Social Media",
+      "Title": "Youtube video topic idea",
+      "Description": "Get inspiration for your next YouTube video!",
+      "Detail": "This prompt helps you get inspiration for your next YouTube video!! \nEasily use the prompt by replacing the highlighted text:\nCome up with a topic idea for a YouTube video.\nNiche/Industry: [What is the niche or industry for the YouTube video?].\nAudience: [Who is the target audience for the video?].\nContent: [What is the content of the video?].\nLength limit: [Enter the desired length of the video in minutes or seconds.].\nWriting style and tone: [Choose writing styles and tones you would want].",
+      "Text": "Come up with a topic idea for a YouTube video.\nNiche/Industry: [What is the niche or industry for the YouTube video?].\nAudience: [Who is the target audience for the video?].\nContent: [What is the content of the video?].\nLength limit: [Enter the desired length of the video in minutes or seconds.].\nWriting style and tone: [Choose writing styles and tones you would want]."
+    },
+    {
+      "icon": "ic_socialmedia",
+      "Topic": "Social Media",
+      "Title": "Instagram Caption ",
+      "Description": "Captivate your followers with authentic and relatable captions",
+      "Detail": "This prompt helps you captivate your followers with authentic and relatable captions! \nEasily use the prompt by replacing the highlighted text:\nWrite 3 Instagram captions \nType of content: [images, reels igtv]\nTarget audience: [Who would most likely see this post?].\nContent: [Content of the post].\nAfter the 3rd caption, please provide a list of 30 hashtags written in a single line separated with a space character. 80% of hashtags should be long-tail and 20% should be high-volume hashtags. Do not include any @mentions.",
+      "Text": "Write 3 Instagram captions \nType of content: [images, reels igtv]\nTarget audience: [Who would most likely see this post?].\nContent: [Content of the post].\nAfter the 3rd caption, please provide a list of 30 hashtags written in a single line separated with a space character. 80% of hashtags should be long-tail and 20% should be high-volume hashtags. Do not include any @mentions."
+    }
+  ]
+}
